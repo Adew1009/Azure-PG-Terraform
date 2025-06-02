@@ -1,0 +1,20 @@
+# Resource group configuration
+resource_group_name = "pg-terraform-rg"
+location           = "Central US"
+
+# Server configuration
+server_name     = "your-server-name"  # Must be globally unique
+admin_username  = "pgadmin"
+admin_password  = "your_secure_password_here"
+postgres_version = "15"
+sku_name        = "GP_Standard_D2s_v3"
+storage_mb      = 32768
+zone            = "1"
+
+# Tags
+tags = {
+  environment = "dev"
+}
+
+# Your public IP address for firewall access
+my_ip = "your_ip_address_here" 

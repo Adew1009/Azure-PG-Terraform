@@ -1,0 +1,386 @@
+pg_restore: connecting to database for restore
+pg_restore: dropping FK CONSTRAINT wishlist_app_wishlist wishlist_app_wishlist_user_id_d7fe98f3_fk_user_app_app_user_id
+pg_restore: dropping FK CONSTRAINT wishlist_app_wishlist wishlist_app_wishlis_parkCode_id_0b5d2dec_fk_allparks_
+pg_restore: dropping FK CONSTRAINT visited_app_visited visited_app_visited_user_id_107a536e_fk_user_app_app_user_id
+pg_restore: dropping FK CONSTRAINT visited_app_visited visited_app_visited_parkCode_id_0ebfd11a_fk_allparks_
+pg_restore: dropping FK CONSTRAINT user_app_app_user_user_permissions user_app_app_user_us_permission_id_3e4182db_fk_auth_perm
+pg_restore: dropping FK CONSTRAINT user_app_app_user_user_permissions user_app_app_user_us_app_user_id_6753a34c_fk_user_app_
+pg_restore: dropping FK CONSTRAINT user_app_app_user_groups user_app_app_user_groups_group_id_4d0a7709_fk_auth_group_id
+pg_restore: dropping FK CONSTRAINT user_app_app_user_groups user_app_app_user_gr_app_user_id_4fd07104_fk_user_app_
+pg_restore: dropping FK CONSTRAINT django_admin_log django_admin_log_user_id_c564eba6_fk_user_app_app_user_id
+pg_restore: dropping FK CONSTRAINT django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co
+pg_restore: dropping FK CONSTRAINT authtoken_token authtoken_token_user_id_35299eff_fk_user_app_app_user_id
+pg_restore: dropping FK CONSTRAINT auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co
+pg_restore: dropping FK CONSTRAINT auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id
+pg_restore: dropping FK CONSTRAINT auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm
+pg_restore: dropping FK CONSTRAINT allparks_app_parktopic allparks_app_parktop_topic_id_2b323c41_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_parktopic allparks_app_parktop_park_id_ea26b49d_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_parkactivity allparks_app_parkact_park_id_a1390779_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_parkactivity allparks_app_parkact_activity_id_b6f9cb86_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_operating_hours allparks_app_park_op_park_id_0f6ecab6_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_operating_hours allparks_app_park_op_operatinghour_id_25b296e3_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_images allparks_app_park_im_park_id_f23bb655_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_images allparks_app_park_im_image_id_95bbb599_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_entrance_fees allparks_app_park_en_park_id_920fe32b_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_entrance_fees allparks_app_park_en_entrancefee_id_a996f376_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park allparks_app_park_contact_id_380b89f7_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_addresses allparks_app_park_ad_park_id_8ac4bc16_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_park_addresses allparks_app_park_ad_address_id_a0ca8446_fk_allparks_
+pg_restore: dropping FK CONSTRAINT allparks_app_contact allparks_app_contact_park_id_68100a11_fk_allparks_
+pg_restore: dropping INDEX wishlist_app_wishlist_user_id_d7fe98f3
+pg_restore: dropping INDEX wishlist_app_wishlist_park_id_287d2d24_like
+pg_restore: dropping INDEX wishlist_app_wishlist_park_id_287d2d24
+pg_restore: dropping INDEX visited_app_visited_user_id_107a536e
+pg_restore: dropping INDEX visited_app_visited_parkCode_id_0ebfd11a_like
+pg_restore: dropping INDEX visited_app_visited_parkCode_id_0ebfd11a
+pg_restore: dropping INDEX user_app_app_user_username_6f69fc5a_like
+pg_restore: dropping INDEX user_app_app_user_user_permissions_permission_id_3e4182db
+pg_restore: dropping INDEX user_app_app_user_user_permissions_app_user_id_6753a34c
+pg_restore: dropping INDEX user_app_app_user_groups_group_id_4d0a7709
+pg_restore: dropping INDEX user_app_app_user_groups_app_user_id_4fd07104
+pg_restore: dropping INDEX user_app_app_user_email_56499fb8_like
+pg_restore: dropping INDEX django_session_session_key_c0390e0f_like
+pg_restore: dropping INDEX django_session_expire_date_a5c62663
+pg_restore: dropping INDEX django_admin_log_user_id_c564eba6
+pg_restore: dropping INDEX django_admin_log_content_type_id_c4bce8eb
+pg_restore: dropping INDEX authtoken_token_key_10f0b77e_like
+pg_restore: dropping INDEX auth_permission_content_type_id_2f476e4b
+pg_restore: dropping INDEX auth_group_permissions_permission_id_84c5c92e
+pg_restore: dropping INDEX auth_group_permissions_group_id_b120cbf9
+pg_restore: dropping INDEX auth_group_name_a6ea08ec_like
+pg_restore: dropping INDEX allparks_app_topic_id_069f88ce_like
+pg_restore: dropping INDEX allparks_app_parktopic_topic_id_2b323c41_like
+pg_restore: dropping INDEX allparks_app_parktopic_topic_id_2b323c41
+pg_restore: dropping INDEX allparks_app_parktopic_park_id_ea26b49d_like
+pg_restore: dropping INDEX allparks_app_parktopic_park_id_ea26b49d
+pg_restore: dropping INDEX allparks_app_parkactivity_park_id_a1390779_like
+pg_restore: dropping INDEX allparks_app_parkactivity_park_id_a1390779
+pg_restore: dropping INDEX allparks_app_parkactivity_activity_id_b6f9cb86_like
+pg_restore: dropping INDEX allparks_app_parkactivity_activity_id_b6f9cb86
+pg_restore: dropping INDEX allparks_app_park_parkCode_6abff73f_like
+pg_restore: dropping INDEX allparks_app_park_operating_hours_park_id_0f6ecab6_like
+pg_restore: dropping INDEX allparks_app_park_operating_hours_park_id_0f6ecab6
+pg_restore: dropping INDEX allparks_app_park_operating_hours_operatinghour_id_25b296e3
+pg_restore: dropping INDEX allparks_app_park_images_park_id_f23bb655_like
+pg_restore: dropping INDEX allparks_app_park_images_park_id_f23bb655
+pg_restore: dropping INDEX allparks_app_park_images_image_id_95bbb599
+pg_restore: dropping INDEX allparks_app_park_entrance_fees_park_id_920fe32b_like
+pg_restore: dropping INDEX allparks_app_park_entrance_fees_park_id_920fe32b
+pg_restore: dropping INDEX allparks_app_park_entrance_fees_entrancefee_id_a996f376
+pg_restore: dropping INDEX allparks_app_park_addresses_park_id_8ac4bc16_like
+pg_restore: dropping INDEX allparks_app_park_addresses_park_id_8ac4bc16
+pg_restore: dropping INDEX allparks_app_park_addresses_address_id_a0ca8446
+pg_restore: dropping INDEX allparks_app_contact_park_id_68100a11_like
+pg_restore: dropping INDEX allparks_app_activity_id_468753dd_like
+pg_restore: dropping CONSTRAINT wishlist_app_wishlist wishlist_app_wishlist_pkey
+pg_restore: dropping CONSTRAINT visited_app_visited visited_app_visited_pkey
+pg_restore: dropping CONSTRAINT user_app_app_user user_app_app_user_username_key
+pg_restore: dropping CONSTRAINT user_app_app_user_user_permissions user_app_app_user_user_permissions_pkey
+pg_restore: dropping CONSTRAINT user_app_app_user_user_permissions user_app_app_user_user_p_app_user_id_permission_i_744c522a_uniq
+pg_restore: dropping CONSTRAINT user_app_app_user user_app_app_user_pkey
+pg_restore: dropping CONSTRAINT user_app_app_user_groups user_app_app_user_groups_pkey
+pg_restore: dropping CONSTRAINT user_app_app_user_groups user_app_app_user_groups_app_user_id_group_id_75ba306a_uniq
+pg_restore: dropping CONSTRAINT user_app_app_user user_app_app_user_email_key
+pg_restore: dropping CONSTRAINT django_session django_session_pkey
+pg_restore: dropping CONSTRAINT django_migrations django_migrations_pkey
+pg_restore: dropping CONSTRAINT django_content_type django_content_type_pkey
+pg_restore: dropping CONSTRAINT django_content_type django_content_type_app_label_model_76bd3d3b_uniq
+pg_restore: dropping CONSTRAINT django_admin_log django_admin_log_pkey
+pg_restore: dropping CONSTRAINT authtoken_token authtoken_token_user_id_key
+pg_restore: dropping CONSTRAINT authtoken_token authtoken_token_pkey
+pg_restore: dropping CONSTRAINT auth_permission auth_permission_pkey
+pg_restore: dropping CONSTRAINT auth_permission auth_permission_content_type_id_codename_01ab375a_uniq
+pg_restore: dropping CONSTRAINT auth_group auth_group_pkey
+pg_restore: dropping CONSTRAINT auth_group_permissions auth_group_permissions_pkey
+pg_restore: dropping CONSTRAINT auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq
+pg_restore: dropping CONSTRAINT auth_group auth_group_name_key
+pg_restore: dropping CONSTRAINT api_app_address api_app_address_pkey
+pg_restore: dropping CONSTRAINT allparks_app_topic allparks_app_topic_pkey
+pg_restore: dropping CONSTRAINT allparks_app_parktopic allparks_app_parktopic_pkey
+pg_restore: dropping CONSTRAINT allparks_app_parkactivity allparks_app_parkactivity_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park allparks_app_park_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park_operating_hours allparks_app_park_operating_hours_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park_operating_hours allparks_app_park_operat_park_id_operatinghour_id_b58658b7_uniq
+pg_restore: dropping CONSTRAINT allparks_app_park_images allparks_app_park_images_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park_images allparks_app_park_images_park_id_image_id_522303fa_uniq
+pg_restore: dropping CONSTRAINT allparks_app_park_entrance_fees allparks_app_park_entrance_fees_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park_entrance_fees allparks_app_park_entran_park_id_entrancefee_id_7ab4fc6f_uniq
+pg_restore: dropping CONSTRAINT allparks_app_park allparks_app_park_contact_id_key
+pg_restore: dropping CONSTRAINT allparks_app_park_addresses allparks_app_park_addresses_pkey
+pg_restore: dropping CONSTRAINT allparks_app_park_addresses allparks_app_park_addresses_park_id_address_id_459634b9_uniq
+pg_restore: dropping CONSTRAINT allparks_app_operatinghour allparks_app_operatinghour_pkey
+pg_restore: dropping CONSTRAINT allparks_app_image allparks_app_image_pkey
+pg_restore: dropping CONSTRAINT allparks_app_entrancefee allparks_app_entrancefee_pkey
+pg_restore: dropping CONSTRAINT allparks_app_contact allparks_app_contact_pkey
+pg_restore: dropping CONSTRAINT allparks_app_contact allparks_app_contact_park_id_key
+pg_restore: dropping CONSTRAINT allparks_app_address allparks_app_address_pkey
+pg_restore: dropping CONSTRAINT allparks_app_activity allparks_app_activity_pkey
+pg_restore: dropping SEQUENCE wishlist_app_wishlist_id_seq
+pg_restore: dropping TABLE wishlist_app_wishlist
+pg_restore: dropping SEQUENCE visited_app_visited_id_seq
+pg_restore: dropping TABLE visited_app_visited
+pg_restore: dropping SEQUENCE user_app_app_user_user_permissions_id_seq
+pg_restore: dropping TABLE user_app_app_user_user_permissions
+pg_restore: dropping SEQUENCE user_app_app_user_id_seq
+pg_restore: dropping SEQUENCE user_app_app_user_groups_id_seq
+pg_restore: dropping TABLE user_app_app_user_groups
+pg_restore: dropping TABLE user_app_app_user
+pg_restore: dropping TABLE django_session
+pg_restore: dropping SEQUENCE django_migrations_id_seq
+pg_restore: dropping TABLE django_migrations
+pg_restore: dropping SEQUENCE django_content_type_id_seq
+pg_restore: dropping TABLE django_content_type
+pg_restore: dropping SEQUENCE django_admin_log_id_seq
+pg_restore: dropping TABLE django_admin_log
+pg_restore: dropping TABLE authtoken_token
+pg_restore: dropping SEQUENCE auth_permission_id_seq
+pg_restore: dropping TABLE auth_permission
+pg_restore: dropping SEQUENCE auth_group_permissions_id_seq
+pg_restore: dropping TABLE auth_group_permissions
+pg_restore: dropping SEQUENCE auth_group_id_seq
+pg_restore: dropping TABLE auth_group
+pg_restore: dropping SEQUENCE api_app_address_id_seq
+pg_restore: dropping TABLE api_app_address
+pg_restore: dropping TABLE allparks_app_topic
+pg_restore: dropping SEQUENCE allparks_app_parktopic_id_seq
+pg_restore: dropping TABLE allparks_app_parktopic
+pg_restore: dropping SEQUENCE allparks_app_parkactivity_id_seq
+pg_restore: dropping TABLE allparks_app_parkactivity
+pg_restore: dropping SEQUENCE allparks_app_park_operating_hours_id_seq
+pg_restore: dropping TABLE allparks_app_park_operating_hours
+pg_restore: dropping SEQUENCE allparks_app_park_images_id_seq
+pg_restore: dropping TABLE allparks_app_park_images
+pg_restore: dropping SEQUENCE allparks_app_park_entrance_fees_id_seq
+pg_restore: dropping TABLE allparks_app_park_entrance_fees
+pg_restore: dropping SEQUENCE allparks_app_park_addresses_id_seq
+pg_restore: dropping TABLE allparks_app_park_addresses
+pg_restore: dropping TABLE allparks_app_park
+pg_restore: dropping SEQUENCE allparks_app_operatinghour_id_seq
+pg_restore: dropping TABLE allparks_app_operatinghour
+pg_restore: dropping SEQUENCE allparks_app_image_id_seq
+pg_restore: dropping TABLE allparks_app_image
+pg_restore: dropping SEQUENCE allparks_app_entrancefee_id_seq
+pg_restore: dropping TABLE allparks_app_entrancefee
+pg_restore: dropping SEQUENCE allparks_app_contact_id_seq
+pg_restore: dropping TABLE allparks_app_contact
+pg_restore: dropping SEQUENCE allparks_app_address_id_seq
+pg_restore: dropping TABLE allparks_app_address
+pg_restore: dropping TABLE allparks_app_activity
+pg_restore: creating TABLE "public.allparks_app_activity"
+pg_restore: creating TABLE "public.allparks_app_address"
+pg_restore: creating SEQUENCE "public.allparks_app_address_id_seq"
+pg_restore: creating TABLE "public.allparks_app_contact"
+pg_restore: creating SEQUENCE "public.allparks_app_contact_id_seq"
+pg_restore: creating TABLE "public.allparks_app_entrancefee"
+pg_restore: creating SEQUENCE "public.allparks_app_entrancefee_id_seq"
+pg_restore: creating TABLE "public.allparks_app_image"
+pg_restore: creating SEQUENCE "public.allparks_app_image_id_seq"
+pg_restore: creating TABLE "public.allparks_app_operatinghour"
+pg_restore: creating SEQUENCE "public.allparks_app_operatinghour_id_seq"
+pg_restore: creating TABLE "public.allparks_app_park"
+pg_restore: creating TABLE "public.allparks_app_park_addresses"
+pg_restore: creating SEQUENCE "public.allparks_app_park_addresses_id_seq"
+pg_restore: creating TABLE "public.allparks_app_park_entrance_fees"
+pg_restore: creating SEQUENCE "public.allparks_app_park_entrance_fees_id_seq"
+pg_restore: creating TABLE "public.allparks_app_park_images"
+pg_restore: creating SEQUENCE "public.allparks_app_park_images_id_seq"
+pg_restore: creating TABLE "public.allparks_app_park_operating_hours"
+pg_restore: creating SEQUENCE "public.allparks_app_park_operating_hours_id_seq"
+pg_restore: creating TABLE "public.allparks_app_parkactivity"
+pg_restore: creating SEQUENCE "public.allparks_app_parkactivity_id_seq"
+pg_restore: creating TABLE "public.allparks_app_parktopic"
+pg_restore: creating SEQUENCE "public.allparks_app_parktopic_id_seq"
+pg_restore: creating TABLE "public.allparks_app_topic"
+pg_restore: creating TABLE "public.api_app_address"
+pg_restore: creating SEQUENCE "public.api_app_address_id_seq"
+pg_restore: creating TABLE "public.auth_group"
+pg_restore: creating SEQUENCE "public.auth_group_id_seq"
+pg_restore: creating TABLE "public.auth_group_permissions"
+pg_restore: creating SEQUENCE "public.auth_group_permissions_id_seq"
+pg_restore: creating TABLE "public.auth_permission"
+pg_restore: creating SEQUENCE "public.auth_permission_id_seq"
+pg_restore: creating TABLE "public.authtoken_token"
+pg_restore: creating TABLE "public.django_admin_log"
+pg_restore: creating SEQUENCE "public.django_admin_log_id_seq"
+pg_restore: creating TABLE "public.django_content_type"
+pg_restore: creating SEQUENCE "public.django_content_type_id_seq"
+pg_restore: creating TABLE "public.django_migrations"
+pg_restore: creating SEQUENCE "public.django_migrations_id_seq"
+pg_restore: creating TABLE "public.django_session"
+pg_restore: creating TABLE "public.user_app_app_user"
+pg_restore: creating TABLE "public.user_app_app_user_groups"
+pg_restore: creating SEQUENCE "public.user_app_app_user_groups_id_seq"
+pg_restore: creating SEQUENCE "public.user_app_app_user_id_seq"
+pg_restore: creating TABLE "public.user_app_app_user_user_permissions"
+pg_restore: creating SEQUENCE "public.user_app_app_user_user_permissions_id_seq"
+pg_restore: creating TABLE "public.visited_app_visited"
+pg_restore: creating SEQUENCE "public.visited_app_visited_id_seq"
+pg_restore: creating TABLE "public.wishlist_app_wishlist"
+pg_restore: creating SEQUENCE "public.wishlist_app_wishlist_id_seq"
+pg_restore: processing data for table "public.allparks_app_activity"
+pg_restore: processing data for table "public.allparks_app_address"
+pg_restore: processing data for table "public.allparks_app_contact"
+pg_restore: processing data for table "public.allparks_app_entrancefee"
+pg_restore: processing data for table "public.allparks_app_image"
+pg_restore: processing data for table "public.allparks_app_operatinghour"
+pg_restore: processing data for table "public.allparks_app_park"
+pg_restore: processing data for table "public.allparks_app_park_addresses"
+pg_restore: processing data for table "public.allparks_app_park_entrance_fees"
+pg_restore: processing data for table "public.allparks_app_park_images"
+pg_restore: processing data for table "public.allparks_app_park_operating_hours"
+pg_restore: processing data for table "public.allparks_app_parkactivity"
+pg_restore: processing data for table "public.allparks_app_parktopic"
+pg_restore: processing data for table "public.allparks_app_topic"
+pg_restore: processing data for table "public.api_app_address"
+pg_restore: processing data for table "public.auth_group"
+pg_restore: processing data for table "public.auth_group_permissions"
+pg_restore: processing data for table "public.auth_permission"
+pg_restore: processing data for table "public.authtoken_token"
+pg_restore: processing data for table "public.django_admin_log"
+pg_restore: processing data for table "public.django_content_type"
+pg_restore: processing data for table "public.django_migrations"
+pg_restore: processing data for table "public.django_session"
+pg_restore: processing data for table "public.user_app_app_user"
+pg_restore: processing data for table "public.user_app_app_user_groups"
+pg_restore: processing data for table "public.user_app_app_user_user_permissions"
+pg_restore: processing data for table "public.visited_app_visited"
+pg_restore: processing data for table "public.wishlist_app_wishlist"
+pg_restore: executing SEQUENCE SET allparks_app_address_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_contact_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_entrancefee_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_image_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_operatinghour_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_park_addresses_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_park_entrance_fees_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_park_images_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_park_operating_hours_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_parkactivity_id_seq
+pg_restore: executing SEQUENCE SET allparks_app_parktopic_id_seq
+pg_restore: executing SEQUENCE SET api_app_address_id_seq
+pg_restore: executing SEQUENCE SET auth_group_id_seq
+pg_restore: executing SEQUENCE SET auth_group_permissions_id_seq
+pg_restore: executing SEQUENCE SET auth_permission_id_seq
+pg_restore: executing SEQUENCE SET django_admin_log_id_seq
+pg_restore: executing SEQUENCE SET django_content_type_id_seq
+pg_restore: executing SEQUENCE SET django_migrations_id_seq
+pg_restore: executing SEQUENCE SET user_app_app_user_groups_id_seq
+pg_restore: executing SEQUENCE SET user_app_app_user_id_seq
+pg_restore: executing SEQUENCE SET user_app_app_user_user_permissions_id_seq
+pg_restore: executing SEQUENCE SET visited_app_visited_id_seq
+pg_restore: executing SEQUENCE SET wishlist_app_wishlist_id_seq
+pg_restore: creating CONSTRAINT "public.allparks_app_activity allparks_app_activity_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_address allparks_app_address_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_contact allparks_app_contact_park_id_key"
+pg_restore: creating CONSTRAINT "public.allparks_app_contact allparks_app_contact_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_entrancefee allparks_app_entrancefee_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_image allparks_app_image_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_operatinghour allparks_app_operatinghour_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_addresses allparks_app_park_addresses_park_id_address_id_459634b9_uniq"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_addresses allparks_app_park_addresses_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_park allparks_app_park_contact_id_key"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_entrance_fees allparks_app_park_entran_park_id_entrancefee_id_7ab4fc6f_uniq"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_entrance_fees allparks_app_park_entrance_fees_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_images allparks_app_park_images_park_id_image_id_522303fa_uniq"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_images allparks_app_park_images_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_operating_hours allparks_app_park_operat_park_id_operatinghour_id_b58658b7_uniq"
+pg_restore: creating CONSTRAINT "public.allparks_app_park_operating_hours allparks_app_park_operating_hours_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_park allparks_app_park_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_parkactivity allparks_app_parkactivity_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_parktopic allparks_app_parktopic_pkey"
+pg_restore: creating CONSTRAINT "public.allparks_app_topic allparks_app_topic_pkey"
+pg_restore: creating CONSTRAINT "public.api_app_address api_app_address_pkey"
+pg_restore: creating CONSTRAINT "public.auth_group auth_group_name_key"
+pg_restore: creating CONSTRAINT "public.auth_group_permissions auth_group_permissions_group_id_permission_id_0cd325b0_uniq"
+pg_restore: creating CONSTRAINT "public.auth_group_permissions auth_group_permissions_pkey"
+pg_restore: creating CONSTRAINT "public.auth_group auth_group_pkey"
+pg_restore: creating CONSTRAINT "public.auth_permission auth_permission_content_type_id_codename_01ab375a_uniq"
+pg_restore: creating CONSTRAINT "public.auth_permission auth_permission_pkey"
+pg_restore: creating CONSTRAINT "public.authtoken_token authtoken_token_pkey"
+pg_restore: creating CONSTRAINT "public.authtoken_token authtoken_token_user_id_key"
+pg_restore: creating CONSTRAINT "public.django_admin_log django_admin_log_pkey"
+pg_restore: creating CONSTRAINT "public.django_content_type django_content_type_app_label_model_76bd3d3b_uniq"
+pg_restore: creating CONSTRAINT "public.django_content_type django_content_type_pkey"
+pg_restore: creating CONSTRAINT "public.django_migrations django_migrations_pkey"
+pg_restore: creating CONSTRAINT "public.django_session django_session_pkey"
+pg_restore: creating CONSTRAINT "public.user_app_app_user user_app_app_user_email_key"
+pg_restore: creating CONSTRAINT "public.user_app_app_user_groups user_app_app_user_groups_app_user_id_group_id_75ba306a_uniq"
+pg_restore: creating CONSTRAINT "public.user_app_app_user_groups user_app_app_user_groups_pkey"
+pg_restore: creating CONSTRAINT "public.user_app_app_user user_app_app_user_pkey"
+pg_restore: creating CONSTRAINT "public.user_app_app_user_user_permissions user_app_app_user_user_p_app_user_id_permission_i_744c522a_uniq"
+pg_restore: creating CONSTRAINT "public.user_app_app_user_user_permissions user_app_app_user_user_permissions_pkey"
+pg_restore: creating CONSTRAINT "public.user_app_app_user user_app_app_user_username_key"
+pg_restore: creating CONSTRAINT "public.visited_app_visited visited_app_visited_pkey"
+pg_restore: creating CONSTRAINT "public.wishlist_app_wishlist wishlist_app_wishlist_pkey"
+pg_restore: creating INDEX "public.allparks_app_activity_id_468753dd_like"
+pg_restore: creating INDEX "public.allparks_app_contact_park_id_68100a11_like"
+pg_restore: creating INDEX "public.allparks_app_park_addresses_address_id_a0ca8446"
+pg_restore: creating INDEX "public.allparks_app_park_addresses_park_id_8ac4bc16"
+pg_restore: creating INDEX "public.allparks_app_park_addresses_park_id_8ac4bc16_like"
+pg_restore: creating INDEX "public.allparks_app_park_entrance_fees_entrancefee_id_a996f376"
+pg_restore: creating INDEX "public.allparks_app_park_entrance_fees_park_id_920fe32b"
+pg_restore: creating INDEX "public.allparks_app_park_entrance_fees_park_id_920fe32b_like"
+pg_restore: creating INDEX "public.allparks_app_park_images_image_id_95bbb599"
+pg_restore: creating INDEX "public.allparks_app_park_images_park_id_f23bb655"
+pg_restore: creating INDEX "public.allparks_app_park_images_park_id_f23bb655_like"
+pg_restore: creating INDEX "public.allparks_app_park_operating_hours_operatinghour_id_25b296e3"
+pg_restore: creating INDEX "public.allparks_app_park_operating_hours_park_id_0f6ecab6"
+pg_restore: creating INDEX "public.allparks_app_park_operating_hours_park_id_0f6ecab6_like"
+pg_restore: creating INDEX "public.allparks_app_park_parkCode_6abff73f_like"
+pg_restore: creating INDEX "public.allparks_app_parkactivity_activity_id_b6f9cb86"
+pg_restore: creating INDEX "public.allparks_app_parkactivity_activity_id_b6f9cb86_like"
+pg_restore: creating INDEX "public.allparks_app_parkactivity_park_id_a1390779"
+pg_restore: creating INDEX "public.allparks_app_parkactivity_park_id_a1390779_like"
+pg_restore: creating INDEX "public.allparks_app_parktopic_park_id_ea26b49d"
+pg_restore: creating INDEX "public.allparks_app_parktopic_park_id_ea26b49d_like"
+pg_restore: creating INDEX "public.allparks_app_parktopic_topic_id_2b323c41"
+pg_restore: creating INDEX "public.allparks_app_parktopic_topic_id_2b323c41_like"
+pg_restore: creating INDEX "public.allparks_app_topic_id_069f88ce_like"
+pg_restore: creating INDEX "public.auth_group_name_a6ea08ec_like"
+pg_restore: creating INDEX "public.auth_group_permissions_group_id_b120cbf9"
+pg_restore: creating INDEX "public.auth_group_permissions_permission_id_84c5c92e"
+pg_restore: creating INDEX "public.auth_permission_content_type_id_2f476e4b"
+pg_restore: creating INDEX "public.authtoken_token_key_10f0b77e_like"
+pg_restore: creating INDEX "public.django_admin_log_content_type_id_c4bce8eb"
+pg_restore: creating INDEX "public.django_admin_log_user_id_c564eba6"
+pg_restore: creating INDEX "public.django_session_expire_date_a5c62663"
+pg_restore: creating INDEX "public.django_session_session_key_c0390e0f_like"
+pg_restore: creating INDEX "public.user_app_app_user_email_56499fb8_like"
+pg_restore: creating INDEX "public.user_app_app_user_groups_app_user_id_4fd07104"
+pg_restore: creating INDEX "public.user_app_app_user_groups_group_id_4d0a7709"
+pg_restore: creating INDEX "public.user_app_app_user_user_permissions_app_user_id_6753a34c"
+pg_restore: creating INDEX "public.user_app_app_user_user_permissions_permission_id_3e4182db"
+pg_restore: creating INDEX "public.user_app_app_user_username_6f69fc5a_like"
+pg_restore: creating INDEX "public.visited_app_visited_parkCode_id_0ebfd11a"
+pg_restore: creating INDEX "public.visited_app_visited_parkCode_id_0ebfd11a_like"
+pg_restore: creating INDEX "public.visited_app_visited_user_id_107a536e"
+pg_restore: creating INDEX "public.wishlist_app_wishlist_park_id_287d2d24"
+pg_restore: creating INDEX "public.wishlist_app_wishlist_park_id_287d2d24_like"
+pg_restore: creating INDEX "public.wishlist_app_wishlist_user_id_d7fe98f3"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_contact allparks_app_contact_park_id_68100a11_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_addresses allparks_app_park_ad_address_id_a0ca8446_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_addresses allparks_app_park_ad_park_id_8ac4bc16_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park allparks_app_park_contact_id_380b89f7_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_entrance_fees allparks_app_park_en_entrancefee_id_a996f376_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_entrance_fees allparks_app_park_en_park_id_920fe32b_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_images allparks_app_park_im_image_id_95bbb599_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_images allparks_app_park_im_park_id_f23bb655_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_operating_hours allparks_app_park_op_operatinghour_id_25b296e3_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_park_operating_hours allparks_app_park_op_park_id_0f6ecab6_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_parkactivity allparks_app_parkact_activity_id_b6f9cb86_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_parkactivity allparks_app_parkact_park_id_a1390779_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_parktopic allparks_app_parktop_park_id_ea26b49d_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.allparks_app_parktopic allparks_app_parktop_topic_id_2b323c41_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.auth_group_permissions auth_group_permissio_permission_id_84c5c92e_fk_auth_perm"
+pg_restore: creating FK CONSTRAINT "public.auth_group_permissions auth_group_permissions_group_id_b120cbf9_fk_auth_group_id"
+pg_restore: creating FK CONSTRAINT "public.auth_permission auth_permission_content_type_id_2f476e4b_fk_django_co"
+pg_restore: creating FK CONSTRAINT "public.authtoken_token authtoken_token_user_id_35299eff_fk_user_app_app_user_id"
+pg_restore: creating FK CONSTRAINT "public.django_admin_log django_admin_log_content_type_id_c4bce8eb_fk_django_co"
+pg_restore: creating FK CONSTRAINT "public.django_admin_log django_admin_log_user_id_c564eba6_fk_user_app_app_user_id"
+pg_restore: creating FK CONSTRAINT "public.user_app_app_user_groups user_app_app_user_gr_app_user_id_4fd07104_fk_user_app_"
+pg_restore: creating FK CONSTRAINT "public.user_app_app_user_groups user_app_app_user_groups_group_id_4d0a7709_fk_auth_group_id"
+pg_restore: creating FK CONSTRAINT "public.user_app_app_user_user_permissions user_app_app_user_us_app_user_id_6753a34c_fk_user_app_"
+pg_restore: creating FK CONSTRAINT "public.user_app_app_user_user_permissions user_app_app_user_us_permission_id_3e4182db_fk_auth_perm"
+pg_restore: creating FK CONSTRAINT "public.visited_app_visited visited_app_visited_parkCode_id_0ebfd11a_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.visited_app_visited visited_app_visited_user_id_107a536e_fk_user_app_app_user_id"
+pg_restore: creating FK CONSTRAINT "public.wishlist_app_wishlist wishlist_app_wishlis_parkCode_id_0b5d2dec_fk_allparks_"
+pg_restore: creating FK CONSTRAINT "public.wishlist_app_wishlist wishlist_app_wishlist_user_id_d7fe98f3_fk_user_app_app_user_id"

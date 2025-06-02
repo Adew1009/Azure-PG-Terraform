@@ -1,0 +1,18 @@
+# Terraform files
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# Database dumps
+*.dump
+local_backup.dump
+nps_db.dump
+
+# Environment variables and secrets
+*.tfvars
+.env
+*.env
+
+# Local configuration
+terraform.tfvars
